@@ -1,0 +1,24 @@
+
+\begin{table}[h]
+\centering
+\caption{Comparison of retrieval methods on the UniMatch Arabic
+student advising FAQ dataset. Index: 280 questions.
+Evaluation: 1,120 queries (4 paraphrases $\times$ 280 questions).
+Acc@k: proportion of queries where the correct answer
+appears in top-k results. MRR: Mean Reciprocal Rank.
+Bold = best result per metric.}
+\label{tab:unimatch_results}
+\begin{tabular}{lrrrr}
+\hline
+\textbf{Method} & \textbf{Acc@1 (\%)} & \textbf{Acc@3 (\%)}
+& \textbf{MRR} & \textbf{Time (ms)} \\
+\hline
+BM25                    & 87.23          & 94.11          & 0.9064 & \textbf{0.49} \\
+TF-IDF                  & 90.09          & 98.04          & 0.9399 & 1.59 \\
+BM25 + BERT (Hybrid)    & 90.80          & 95.36          & 0.9290 & 11.57 \\
+Sentence-BERT           & 92.59          & 97.95          & 0.9528 & 45.88 \\
+\textbf{TF-IDF + BERT (Proposed)} & \textbf{92.68} & \textbf{98.12}
+& \textbf{0.9531} & 12.72 \\
+\hline
+\end{tabular}
+\end{table}

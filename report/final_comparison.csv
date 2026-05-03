@@ -1,0 +1,6 @@
+﻿Method,Accuracy@1,Accuracy@3,MRR,Avg Score,Avg Time (ms),Index Size,Test Queries,Language,Domain
+BM25,87.23,94.11,0.9064,18.72,0.49,280,1120,Arabic,Student Advising — PTUK
+TF-IDF,90.09,98.04,0.9399,0.8008,1.59,280,1120,Arabic,Student Advising — PTUK
+BM25+BERT,90.8,95.36,0.929,0.9194,11.57,280,1120,Arabic,Student Advising — PTUK
+Sentence-BERT,92.59,97.95,0.9528,0.9312,45.88,280,1120,Arabic,Student Advising — PTUK
+TF-IDF+BERT,92.68,98.12,0.9531,0.9287,12.72,280,1120,Arabic,Student Advising — PTUK
